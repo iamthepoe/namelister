@@ -37,7 +37,7 @@ function removename(){
 	if(names.indexOf(name) < 0){
 		alert("Esse nome não está na lista.");
 	}else{
-		let confirm = parseInt(prompt(`Realmente deseja remover o nome "${name}" da lista? [1] - Sim | [2] - Não`));
+		let confirm = parseInt(prompt(`Realmente deseja remover o nome "${name}" da lista?\n[1] - Sim | [2] - Não`));
 		if(confirm == 1){
 			names.splice((names.indexOf(name)), 1);
 			alert("Nome removido com sucesso");
